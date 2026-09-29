@@ -13,10 +13,13 @@ config_version=5
 config/name="Kyoto Second Game"
 run/main_scene="uid://jyjha3uv6cv3"
 config/features=PackedStringArray("4.7", "GL Compatibility")
+boot_splash/show_image=false
 config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_width=1280
+window/size/viewport_height=720
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
