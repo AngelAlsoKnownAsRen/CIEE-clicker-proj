@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://b78b6oq4wddac"]
 
 [ext_resource type="Texture2D" uid="uid://bauuge46idjkt" path="res://sprites/Animated Coins.png" id="1_x23b3"]
+[ext_resource type="Script" uid="uid://cn3tjm6m4o727" path="res://object scenes/coin.gd" id="2_lfqed"]
+[ext_resource type="AudioStream" uid="uid://ddi0cuj1ky10m" path="res://sound/dice roll.mp3" id="3_kvhpl"]
+[ext_resource type="AudioStream" uid="uid://bgurqdydykqev" path="res://sound/auto roll.mp3" id="4_dl10c"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3nda5"]
 radius = 30.016663
@@ -70,6 +73,8 @@ animations = [{
 }]
 
 [node name="animated_coin" type="RigidBody2D" unique_id=2058003620]
+z_index = 1
+script = ExtResource("2_lfqed")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=688609521]
 shape = SubResource("CircleShape2D_3nda5")
@@ -79,3 +84,17 @@ scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_3nda5")
 frame_progress = 0.24703316
 speed_scale = 2.0
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1644906966]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=2089082891]
+stream = ExtResource("3_kvhpl")
+volume_db = -8.0
+autoplay = true
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="." unique_id=186822006]
+stream = ExtResource("4_dl10c")
+volume_db = -4.0
+autoplay = true
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
