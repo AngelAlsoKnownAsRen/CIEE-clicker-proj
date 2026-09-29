@@ -1,14 +1,12 @@
 # Project 2: README
+
 [![Godot Version](https://img.shields.io/badge/Godot-4.x-blue?logo=godot-engine&logoColor=white)](https://godotengine.org)
 [![Platform](https://img.shields.io/badge/Platform-PC%20/%20Web-green)](https://godotengine.org)
----
+
 Made by **Angel (Aka Himari)**
----
-
-## How to Play
-- **Play in Browser:** [Click here](https://starsofthecities.itch.io/cho-han-clicker) to open in itch.io
 
 ---
+
 
 ## Artistic Statement
 
