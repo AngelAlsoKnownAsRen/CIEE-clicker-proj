@@ -6,7 +6,9 @@
 Made by **Angel (Aka Himari)**
 
 ---
-
+## How to Play
+- **Play in Browser:** [Click here](https://starsofthecities.itch.io/cho-han-clicker) to open in itch.io
+---
 
 ## Artistic Statement
 
